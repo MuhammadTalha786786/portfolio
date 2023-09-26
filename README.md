@@ -1,4 +1,3 @@
-![hero](example/hero.png)
 
 # Portfolio using React.js and Chakra UI
 
