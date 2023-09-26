@@ -17,12 +17,12 @@ export default function Header({ color }) {
     "siteName": "",
     "headerName": "Hi, my name is Muhammad Talha.",
     "headerRole": "I'm a software engineer.",
-    "headerDesc": "ajkfasdfk.",
+    "headerDesc": "Building phase.",
     "about": "Write your \"About\" section here.",
     "contact": "Write your \"Contact\" section here.",
-    "linkedin": "https://linkedin.com/in/username",
+    "linkedin": "https://www.linkedin.com/in/muhammad-talha-b16520185/",
     "github": "https://github.com/username",
-    "email": "username@gmail.com",
+    "email": "mtalha25800@gmail.com",
     "logo": "MT"
   }
   const scrollToContact = () => {

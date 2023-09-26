@@ -46,7 +46,7 @@ export default function Contact({ color }) {
               {profile.contact}
             </Text>
             <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
-              {profile.email}
+             mtalha25800@gmail.com
             </Text>
             <Center>
               <HStack pt={4} spacing={4}>

@@ -18,14 +18,143 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
-import ProjectsArray from "./ProjectsArray";
-import OtherProjectsArray from "./OtherProjectsArray";
+// import OtherProjectsArray from "./OtherProjectsArray";
 import TagsArray from "./TagsArray";
 
 export default function Projects({ color }) {
-    const projects = ProjectsArray();
-    const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
+    const projects = [
+      {
+          "name": "Project B",
+          "description": "Description",
+          "image": "https://via.placeholder.com/600x200",
+          "tags": [
+              "Category 1"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      },
+      {
+          "name": "Project B",
+          "description": "Description",
+          "image": "https://via.placeholder.com/600x200",
+          "tags": [
+              "Category 2"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      },
+      {
+          "name": "Project C",
+          "description": "Description",
+          "image": "https://via.placeholder.com/600x200",
+          "tags": [
+              "Category 3"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      }
+  ];
+    const others = [
+      {
+          "name": "Project 1",
+          "description": "Description",
+          "tags": [
+              "Category 1"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      },
+      {
+          "name": "Project 2",
+          "description": "Description",
+          "tags": [
+              "Category 2"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      },
+      {
+          "name": "Project 3",
+          "description": "Description",
+          "tags": [
+              "Category 3"
+          ],
+          "badges": [
+              {
+                  "text": "Badge",
+                  "colorScheme": "blue"
+              }
+          ],
+          "buttons": [
+              {
+                  "text": "Link",
+                  "href": "https://example.com"
+              }
+          ]
+      }
+  ];
+  const options = [
+    {
+        value: "Category 1"
+    },
+    {
+        value: "Category 2"
+    },
+    {
+        value: "Category 3"
+    }
+];
+  console.log(options, "options")
     
     const [selected, setSelected] = useState("All");
 

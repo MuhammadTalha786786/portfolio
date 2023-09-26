@@ -88,14 +88,14 @@ export default function Experience({ color }) {
         value: "Category 3"
     }
 ];
-  const [selected, setSelected] = useState("");
+const [selected, setSelected] = useState("");
 
 
   useEffect(() => {
     if (options.length > 0) {
       setSelected(options[0].value);
     }
-  }, [options]);
+  }, []);
   
   const handleSelected = (value) => {
     setSelected(value);
