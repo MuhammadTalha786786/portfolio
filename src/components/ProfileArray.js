@@ -77,6 +77,7 @@ const ProfileArray = () => {
         return response.text();
       })
       .then((mdContent) => {
+        console.log(mdContent,"mdcontent")
         setProfile(parseProfile(mdContent));
       })
       .catch((error) => {
