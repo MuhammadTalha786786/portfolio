@@ -33,7 +33,10 @@ const TagsArray = (file) => {
       });
   }, [file]);
 
+  console.log(Tags,"tags")
   return Tags;
 };
+
+
 
 export default TagsArray;

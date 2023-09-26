@@ -12,18 +12,31 @@ import {
 import ProfileArray from "./ProfileArray";
 
 export default function Header({ color }) {
-  const profile = ProfileArray();
+  // const profile = ProfileArray();
+  let profile = {
+    "siteName": "",
+    "headerName": "Hi, my name is Muhammad Talha.",
+    "headerRole": "I'm a software engineer.",
+    "headerDesc": "ajkfasdfk.",
+    "about": "Write your \"About\" section here.",
+    "contact": "Write your \"Contact\" section here.",
+    "linkedin": "https://linkedin.com/in/username",
+    "github": "https://github.com/username",
+    "email": "username@gmail.com",
+    "logo": "MT"
+  }
   const scrollToContact = () => {
     const contactSection = document.querySelector("#contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   const linkedin = () => {
     window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+      `${profile.linkedin}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
   };
+
   return (
     <>
       <Heading>

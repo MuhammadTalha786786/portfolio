@@ -22,13 +22,74 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
-import ExperienceArray from "./ExperienceArray";
-import TagsArray from "./TagsArray";
 
 export default function Experience({ color }) {
-  const experience = ExperienceArray();
-  const options = TagsArray("ExperienceTags");
+  const experience = [
+    {
+        "image": "../assets/logo512.png",
+        "company": "Company 1",
+        "position": "Role",
+        "duration": "Jan'23 - Feb'23",
+        "badges": [
+            {
+                "name": "Badge",
+                "colorScheme": "blue"
+            }
+        ],
+        "listItems": [
+            "Point 1",
+            "Point 2"
+        ],
+        "tags": "Category 1"
+    },
+    {
+        "image": "../assets/logo512.png",
+        "company": "Company 2",
+        "position": "Role",
+        "duration": "Feb'23 - Mar'23",
+        "badges": [
+            {
+                "name": "Badge",
+                "colorScheme": "blue"
+            }
+        ],
+        "listItems": [
+            "Point 1",
+            "Point 2"
+        ],
+        "tags": "Category 2"
+    },
+    {
+        "image": "../assets/logo512.png",
+        "company": "Company 3",
+        "position": "Role",
+        "duration": "Mar'23 - Apr'23",
+        "badges": [
+            {
+                "name": "Badge",
+                "colorScheme": "blue"
+            }
+        ],
+        "listItems": [
+            "Point 1",
+            "Point 2"
+        ],
+        "tags": "Category 3"
+    }
+];
+  const options = [
+    {
+        value: "Category 1"
+    },
+    {
+        value: "Category 2"
+    },
+    {
+        value: "Category 3"
+    }
+];
   const [selected, setSelected] = useState("");
+
 
   useEffect(() => {
     if (options.length > 0) {
@@ -39,6 +100,7 @@ export default function Experience({ color }) {
   const handleSelected = (value) => {
     setSelected(value);
   };
+
 
   return (
     <>

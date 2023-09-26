@@ -16,11 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
-import ProfileArray from "./ProfileArray";
 const TbIcons = require("react-icons/tb");
 
 export default function Nav({ color }) {
-  const profile = ProfileArray();
   const colors = {
   "blue": "#3182CE", 
   "cyan": "#00B5D8", 
@@ -63,14 +61,10 @@ export default function Nav({ color }) {
       : setScroll(false);
 
   window.addEventListener("scroll", changeScroll);
+  let M='M'
+  let T='T'
 
-  const TbLetterComponents = [];
-
-  for (let i = 0; i < profile.logo.length; i++) {
-    const letter = profile.logo[i];
-    const component = TbIcons[`TbLetter${letter}`];
-    TbLetterComponents.push(component);
-  }
+  const TbLetterComponents = [TbIcons[`TbLetter${M}`],TbIcons[`TbLetter${T}`]];
 
   return (
     <>
