@@ -7,7 +7,7 @@
 - ajkfasdfk.
 
 ## About
-The new .
+Write your "About" section here.
 
 ## Contact
 Write your "Contact" section here.
