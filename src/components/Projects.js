@@ -18,13 +18,15 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
+import funoonee from './images/Funoonee.jpg'
+import worklics from './images/worklics.jpg'
 // 
 export default function Projects({ color }) {
     const projects = [
       {
-          "name": "Project B",
-          "description": "Description",
-          "image": "https://via.placeholder.com/600x200",
+          "name": "Consumer App",
+          "description": "24Seven is an online grocery shopping platform with more than 1000 registered store partners in the market.Consumer App ( Apni Dukan ) is like ecommerce app in which users can shop online, browse product catalogs,create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
+          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
           "tags": [
               "Category 1"
           ],
@@ -42,9 +44,9 @@ export default function Projects({ color }) {
           ]
       },
       {
-          "name": "Project B",
-          "description": "Description",
-          "image": "https://via.placeholder.com/600x200",
+          "name": "OnBoarding App",
+          "description": "OnBoarding is basically used to onboard the shop retailers who are registered with 24Seven. Associates add the required data of shops and shop owners which can approve or reject by the Cluster Manager.",
+          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
           "tags": [
               "Category 2"
           ],
@@ -62,9 +64,9 @@ export default function Projects({ color }) {
           ]
       },
       {
-          "name": "Project C",
-          "description": "Description",
-          "image": "https://via.placeholder.com/600x200",
+          "name": "Delivery App",
+          "description": "The delivery app is used for delivering orders of the shop retailers from the  warehouse. The rider automatically moves to the optimized route of the",
+          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
           "tags": [
               "Category 3"
           ],
@@ -80,12 +82,58 @@ export default function Projects({ color }) {
                   "href": "https://example.com"
               }
           ]
-      }
+      },
+      {
+        "name": "Funoonee",
+        "description": "Funoonee is an online market for hiring handymen based in Riyadh. My core responsibilities were the development of both mobile and web application using react-native and react js for both platforms respectively. Maintain and Deployed on the App Store.",
+        "image": funoonee,
+        "tags": [
+            "Category 3"
+        ],
+        "badges": [
+            {
+                "text": "Badge",
+                "colorScheme": "blue"
+            }
+        ],
+        "buttons": [
+            {
+                "text": "Link",
+                "href": "https://example.com"
+            }
+        ]
+    },
+    {
+      "name": "Worklics",
+      "description": `An attendance app built using the React-native framework and nodeJS and PostgreSQL being the backend and database respectively. The app consists of separate individual modules with facial recognition being the core of all.
+      The app is currently being used by the DCC Construction Company Internally.
+      Microsoft Azure cognitive services for face detection. Google-maps Api for
+      location. Redux persists for global state management. implement push
+      Notiﬁcation using Firebase. Deploy app on App Store and Play store.`,
+      "image": worklics,
+      "tags": [
+          "Category 3"
+      ],
+      "badges": [
+          {
+              "text": "Badge",
+              "colorScheme": "blue"
+          }
+      ],
+      "buttons": [
+          {
+              "text": "Link",
+              "href": "https://example.com"
+          }
+      ]
+  }
+
+
   ];
     const others = [
       {
           "name": "Project 1",
-          "description": "Description",
+          "description": "under construction",
           "tags": [
               "Category 1"
           ],
@@ -104,7 +152,7 @@ export default function Projects({ color }) {
       },
       {
           "name": "Project 2",
-          "description": "Description",
+          "description": "under construction",
           "tags": [
               "Category 2"
           ],
@@ -123,7 +171,7 @@ export default function Projects({ color }) {
       },
       {
           "name": "Project 3",
-          "description": "Description",
+          "description": "under construction",
           "tags": [
               "Category 3"
           ],
@@ -196,7 +244,7 @@ export default function Projects({ color }) {
 
                       <Text py={2}>{project.description}</Text>
 
-                      <HStack py={2}>
+                      {/* <HStack py={2}>
                         {project.buttons.map((button) => (
                           <a key={button.text} href={button.href}>
                             <Button color={`${color}.400`}>
@@ -204,8 +252,8 @@ export default function Projects({ color }) {
                             </Button>
                           </a>
                         ))}
-                      </HStack>
-                      <HStack pt={4} spacing={2}>
+                      </HStack> */}
+                      {/* <HStack pt={4} spacing={2}>
                         {project.badges.map((badge) => (
                           <Badge
                             key={badge.text}
@@ -214,7 +262,7 @@ export default function Projects({ color }) {
                             {badge.text}
                           </Badge>
                         ))}
-                      </HStack>
+                      </HStack> */}
                     </CardBody>
                   </Stack>
                 </Card>
