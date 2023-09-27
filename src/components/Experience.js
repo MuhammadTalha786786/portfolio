@@ -22,71 +22,63 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
+import logo from './images/logo.png'
+import codeninja from './images/codeninja.jpeg'
+
 
 export default function Experience({ color }) {
   const experience = [
+  
     {
-        "image": "../assets/logo512.png",
-        "company": "Company 1",
-        "position": "Role",
-        "duration": "Jan'23 - Feb'23",
+        "image": codeninja,
+        "company": "CodeNinja Consulting",
+        "position": "Software Engineer",
+        "duration": "Feb'22- Continue",
         "badges": [
             {
-                "name": "Badge",
+                "name": "",
                 "colorScheme": "blue"
             }
         ],
         "listItems": [
-            "Point 1",
-            "Point 2"
+            "Developed and maintained React Native components, screens, and features for the mobile app",
+            "Collaborated with other developers to implement new features in a way that is consistent with existing code-base conventions",
+            "Developed front-end user interface using React Native and JavaScript forx iOS and Android mobile applications.",
+            "Integrate Rest API's With the Application",
+            "Maintain code for Both Android and IOS",
+            "Deployed Apps on Both PlayStore and AppStore"
         ],
-        "tags": "Category 1"
+        "tags": "CodeNinja Consulting"
     },
     {
-        "image": "../assets/logo512.png",
-        "company": "Company 2",
-        "position": "Role",
-        "duration": "Feb'23 - Mar'23",
-        "badges": [
-            {
-                "name": "Badge",
-                "colorScheme": "blue"
-            }
-        ],
-        "listItems": [
-            "Point 1",
-            "Point 2"
-        ],
-        "tags": "Category 2"
-    },
-    {
-        "image": "../assets/logo512.png",
-        "company": "Company 3",
-        "position": "Role",
-        "duration": "Mar'23 - Apr'23",
-        "badges": [
-            {
-                "name": "Badge",
-                "colorScheme": "blue"
-            }
-        ],
-        "listItems": [
-            "Point 1",
-            "Point 2"
-        ],
-        "tags": "Category 3"
-    }
+      "image": logo,
+      "company": "Bitmesh Technologies",
+      "position": "Software Engineer",
+      "duration": "Sep'21 - Jan'22",
+      "badges": [
+          {
+              "name": "",
+              "colorScheme": "blue"
+          }
+      ],
+      "listItems": [
+          "As a React developer, worked on both mobile and web, designing and integrating apis, collaborating with the team and gather requirements",
+        
+      ],
+      "tags": "Bitmesh Technologies"
+  },
+ 
 ];
   const options = [
+    
     {
-        value: "Category 1"
+        value: "CodeNinja Consulting"
     },
+
     {
-        value: "Category 2"
-    },
-    {
-        value: "Category 3"
-    }
+      value: "Bitmesh Technologies"
+  },
+    
 ];
 const [selected, setSelected] = useState("");
 
@@ -132,7 +124,7 @@ const [selected, setSelected] = useState("");
               ))}
             </ButtonGroup>
           </Center>
-          <Stack px={4} spacing={4}>
+          <Stack px={2} spacing={4}>
             {experience
               .filter((exp) => exp.tags.includes(selected))
               .map((exp) => (
@@ -154,7 +146,7 @@ const [selected, setSelected] = useState("");
                     </CardHeader>
                     <CardBody>
                       <Flex>
-                        <List align="left" spacing={3}>
+                        <List align="left" spacing={2}>
                           {exp.listItems.map((item, index) => (
                             <ListItem key={index}>
                               <ListIcon

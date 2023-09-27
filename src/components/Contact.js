@@ -9,10 +9,22 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import ProfileArray from "./ProfileArray";
+// import ProfileArray from "./ProfileArray";
 
 export default function Contact({ color }) {
-  const profile = ProfileArray();
+  // const profile = ProfileArray();
+  let profile = {
+    "siteName": "",
+    "headerName": "Hi, my name is Muhammad Talha.",
+    "headerRole": "I'm a software engineer.",
+    "headerDesc": "I'm a software engineer  having 2 years of expeience  in React Native and React Js, developed web and cross platform Apps",
+    "about": "Write your \"About\" section here.",
+    "contact": "Write your \"Contact\" section here.",
+    "linkedin": "https://www.linkedin.com/in/muhammad-talha-b16520185/",
+    "github": "https://github.com/MuhammadTalha786786",
+    "email": "mtalha25800@gmail.com",
+    "logo": "MT"
+  }
   const linkedin = () => {
     window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };

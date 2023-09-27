@@ -18,9 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
-// import OtherProjectsArray from "./OtherProjectsArray";
-import TagsArray from "./TagsArray";
-
+// 
 export default function Projects({ color }) {
     const projects = [
       {

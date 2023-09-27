@@ -93,7 +93,7 @@ export default function Nav({ color }) {
             {isLargerThanMD ? (
               <>
                 <Button variant="ghost" onClick={scrollToAbout}>
-                  About
+                  Skill
                 </Button>
                 <Button variant="ghost" onClick={scrollToExperience}>
                   Experience
