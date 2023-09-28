@@ -20,6 +20,8 @@ import { Fade } from "react-reveal";
 import { useState } from "react";
 import funoonee from './images/Funoonee.jpg'
 import worklics from './images/worklics.jpg'
+import onboard from './images/onboarding.jpg'
+import delivery from './images/delivery.jpg'
 // 
 export default function Projects({ color }) {
     const projects = [
@@ -46,7 +48,7 @@ export default function Projects({ color }) {
       {
           "name": "OnBoarding App",
           "description": "OnBoarding is basically used to onboard the shop retailers who are registered with 24Seven. Associates add the required data of shops and shop owners which can approve or reject by the Cluster Manager.",
-          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
+          "image": onboard,
           "tags": [
               "Category 2"
           ],
@@ -66,7 +68,7 @@ export default function Projects({ color }) {
       {
           "name": "Delivery App",
           "description": "The delivery app is used for delivering orders of the shop retailers from the  warehouse. The rider automatically moves to the optimized route of the",
-          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
+          "image": delivery,
           "tags": [
               "Category 3"
           ],
