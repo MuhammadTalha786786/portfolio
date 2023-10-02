@@ -1,36 +1,37 @@
-@media  only screen and (max-width: 800px) {
-    #skills{
+@media only screen and (max-width: 800px) {
+    #skills {
         max-width: "60%";
         flex-direction: column;
-   padding-bottom: 10px;       
+        padding-bottom: 10px;
         overflow: hidden;
     }
 
-    #skillHeader{
-       margin-top: 40;
+    #skillHeader {
+        margin-top: 40;
     }
-    #profileImage{
+
+    #profileImage {
         /* align-items: center;
         justify-content: center;  */
         height: 300px;
         width: 300px;
-        margin-left: 10px; 
+        margin-left: 10px;
         margin-top: 80px;
         width: 100%;
         /* background-color: blanchedalmond; */
         overflow: hidden;
         /* margin-bottom: 20; */
-        
+
     }
 
-    #heroHeader{
+    #heroHeader {
         margin-top: 200px;
         /* justify-content: center; */
         margin-left: 10;
         /* margin-top: 80px; */
     }
 
-    #experienceButton{
+    #experienceButton {
         overflow: hidden;
         width: '100%';
         font-size: small;
@@ -39,13 +40,69 @@
         /* font-size: 5px; */
     }
 
-  }
-  /* @media ( min-width: 480px) {
-   
-    #profileImage{
-        margin-top: 300;
-        margin-left: 30;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+    #skills {
+        max-width: "60%";
+        flex-direction: column;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+    #skillHeader {
+        margin-top: 40;
+    }
+
+    #profileImage {
+        /* align-items: center;
+        justify-content: center;  */
+        height: 400px;
+        width: 400px;
+        margin-left: 10px;
+        margin-top: 80px;
+        width: 100%;
+        background-color: teal;
+        overflow: hidden;
+        /* margin-bottom: 20; */
 
     }
 
-  } */
+    #heroHeader {
+        margin-top: 300px;
+        /* justify-content: center; */
+        margin-left: 10;
+        /* margin-top: 80px; */
+    }
+
+    #experienceButton {
+        overflow: hidden;
+        width: '100%';
+        font-size: small;
+        /* padding-left:10px; */
+
+        /* font-size: 5px; */
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    #profileImage {
+
+        /* overflow: hidden; */
+        background-color: teal;
+        margin-top: 100px;
+        margin-left: 10px;
+        /* margin-bottom: 20; */
+
+    }
+
+
+
+}
+
+
