@@ -24,6 +24,8 @@ import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
 import logo from './images/logo.png'
 import codeninja from './images/codeninja.jpeg'
+import './ResponsiveStyle.css'
+
 
 
 export default function Experience({ color }) {
@@ -113,9 +115,10 @@ const [selected, setSelected] = useState("");
             <Divider orientation="horizontal" />
           </Stack>
           <Center px={4}>
-            <ButtonGroup variant="outline">
+            <ButtonGroup variant="outline"  >
               {options.map((option) => (
                 <Button
+                id='experienceButton'
                   colorScheme={selected === option.value ? `${color}` : "gray"}
                   onClick={() => handleSelected(option.value)}
                 >

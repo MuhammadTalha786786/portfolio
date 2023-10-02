@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import profileImage from './images/profile.png'
 import { Grid, GridItem } from '@chakra-ui/react'
-
+import './ResponsiveStyle.css'
 
 export default function Header({ color }) {
   let profile = {
@@ -50,13 +50,13 @@ export default function Header({ color }) {
 
       <Grid gap={2}>
 
-        <GridItem w='100%' h='10' bg='blue.500' >
-          <Box boxSize='sm' style={{ marginTop: 300, marginLeft: 30 }}>
-            <Image src={profileImage} alt='Dan Abramov' borderRadius='full' />
+        <GridItem w='100%' h='10'  >
+          <Box >
+            <Image src={profileImage} alt='Dan Abramov' borderRadius='full'  id='profileImage'  />
           </Box>
         </GridItem>
 
-        <Container maxW={"4xl"} id="hero">
+        <Container maxW={"4xl"} id="hero"  >
 
           <Stack
             as={Box}
@@ -64,6 +64,7 @@ export default function Header({ color }) {
             spacing={{ base: 8, md: 14 }}
             pb={{ base: 20, md: 36 }}
             pt={{ base: 36, md: 52 }}
+            id='heroHeader'
           >
             <Heading
               fontWeight={600}

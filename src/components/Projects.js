@@ -22,6 +22,8 @@ import funoonee from './images/Funoonee.jpg'
 import worklics from './images/worklics.jpg'
 import onboard from './images/onboarding.jpg'
 import delivery from './images/delivery.jpg'
+import './ResponsiveStyle.css'
+
 // 
 export default function Projects({ color }) {
     const projects = [
@@ -277,6 +279,7 @@ export default function Projects({ color }) {
           <Center px={4}>
             <ButtonGroup variant="outline">
               <Button
+              id ='experienceButton'
                 colorScheme={selected === "All" ? `${color}` : "gray"}
                 onClick={() => handleSelected("All")}
               >
@@ -284,6 +287,8 @@ export default function Projects({ color }) {
               </Button>
               {options.map((option) => (
                 <Button
+                id ='experienceButton'
+
                   colorScheme={selected === option.value ? `${color}` : "gray"}
                   onClick={() => handleSelected(option.value)}
                 >

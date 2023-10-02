@@ -1,0 +1,51 @@
+@media  only screen and (max-width: 800px) {
+    #skills{
+        max-width: "60%";
+        flex-direction: column;
+   padding-bottom: 10px;       
+        overflow: hidden;
+    }
+
+    #skillHeader{
+       margin-top: 40;
+    }
+    #profileImage{
+        /* align-items: center;
+        justify-content: center;  */
+        height: 300px;
+        width: 300px;
+        margin-left: 10px; 
+        margin-top: 80px;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+        overflow: hidden;
+        /* margin-bottom: 20; */
+        
+    }
+
+    #heroHeader{
+        margin-top: 200px;
+        /* justify-content: center; */
+        margin-left: 10;
+        /* margin-top: 80px; */
+    }
+
+    #experienceButton{
+        overflow: hidden;
+        width: '100%';
+        font-size: small;
+        /* padding-left:10px; */
+
+        /* font-size: 5px; */
+    }
+
+  }
+  /* @media ( min-width: 480px) {
+   
+    #profileImage{
+        margin-top: 300;
+        margin-left: 30;
+
+    }
+
+  } */
