@@ -5,10 +5,7 @@ import {
   Container,
   Box,
   HStack,
-  Button,
-  ButtonGroup,
-  IconButton,
-  VStack
+ 
 } from "@chakra-ui/react";
 import {skills} from '.././utils/Utils'
 import './ResponsiveStyle.css'

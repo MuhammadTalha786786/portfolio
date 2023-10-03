@@ -26,86 +26,86 @@ import './ResponsiveStyle.css'
 
 // 
 export default function Projects({ color }) {
-    const projects = [
-      {
-          "name": "Consumer App",
-          "description": "24Seven is an online grocery shopping platform with more than 1000 registered store partners in the market.Consumer App ( Apni Dukan ) is like ecommerce app in which users can shop online, browse product catalogs,create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
-          "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
-          "tags": [
-              "Category 1"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      },
-      {
-          "name": "OnBoarding App",
-          "description": "OnBoarding is basically used to onboard the shop retailers who are registered with 24Seven. Associates add the required data of shops and shop owners which can approve or reject by the Cluster Manager.",
-          "image": onboard,
-          "tags": [
-              "Category 2"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      },
-      {
-          "name": "Delivery App",
-          "description": "The delivery app is used for delivering orders of the shop retailers from the  warehouse. The rider automatically moves to the optimized route of the",
-          "image": delivery,
-          "tags": [
-              "Category 3"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      },
-      {
-        "name": "Funoonee",
-        "description": "Funoonee is an online market for hiring handymen based in Riyadh. My core responsibilities were the development of both mobile and web application using react-native and react js for both platforms respectively. Maintain and Deployed on the App Store.",
-        "image": funoonee,
-        "tags": [
-            "Category 3"
-        ],
-        "badges": [
-            {
-                "text": "Badge",
-                "colorScheme": "blue"
-            }
-        ],
-        "buttons": [
-            {
-                "text": "Link",
-                "href": "https://example.com"
-            }
-        ]
+  const projects = [
+    {
+      "name": "Consumer App",
+      "description": "24Seven is an online grocery shopping platform with more than 1000 registered store partners in the market.Consumer App ( Apni Dukan ) is like ecommerce app in which users can shop online, browse product catalogs,create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
+      "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
+      "tags": [
+        "Category 1"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    },
+    {
+      "name": "OnBoarding App",
+      "description": "OnBoarding is basically used to onboard the shop retailers who are registered with 24Seven. Associates add the required data of shops and shop owners which can approve or reject by the Cluster Manager.",
+      "image": onboard,
+      "tags": [
+        "Category 2"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    },
+    {
+      "name": "Delivery App",
+      "description": "The delivery app is used for delivering orders of the shop retailers from the  warehouse. The rider automatically moves to the optimized route of the",
+      "image": delivery,
+      "tags": [
+        "Category 3"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    },
+    {
+      "name": "Funoonee",
+      "description": "Funoonee is an online market for hiring handymen based in Riyadh. My core responsibilities were the development of both mobile and web application using react-native and react js for both platforms respectively. Maintain and Deployed on the App Store.",
+      "image": funoonee,
+      "tags": [
+        "Category 3"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
     },
     {
       "name": "Worklics",
@@ -116,102 +116,102 @@ export default function Projects({ color }) {
       Notiﬁcation using Firebase. Deploy app on App Store and Play store.`,
       "image": worklics,
       "tags": [
-          "Category 3"
+        "Category 3"
       ],
       "badges": [
-          {
-              "text": "Badge",
-              "colorScheme": "blue"
-          }
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
       ],
       "buttons": [
-          {
-              "text": "Link",
-              "href": "https://example.com"
-          }
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
       ]
-  }
+    }
 
 
   ];
-    const others = [
-      {
-          "name": "Project 1",
-          "description": "under construction",
-          "tags": [
-              "Category 1"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      },
-      {
-          "name": "Project 2",
-          "description": "under construction",
-          "tags": [
-              "Category 2"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      },
-      {
-          "name": "Project 3",
-          "description": "under construction",
-          "tags": [
-              "Category 3"
-          ],
-          "badges": [
-              {
-                  "text": "Badge",
-                  "colorScheme": "blue"
-              }
-          ],
-          "buttons": [
-              {
-                  "text": "Link",
-                  "href": "https://example.com"
-              }
-          ]
-      }
+  const others = [
+    {
+      "name": "Project 1",
+      "description": "under construction",
+      "tags": [
+        "Category 1"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    },
+    {
+      "name": "Project 2",
+      "description": "under construction",
+      "tags": [
+        "Category 2"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    },
+    {
+      "name": "Project 3",
+      "description": "under construction",
+      "tags": [
+        "Category 3"
+      ],
+      "badges": [
+        {
+          "text": "Badge",
+          "colorScheme": "blue"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Link",
+          "href": "https://example.com"
+        }
+      ]
+    }
   ];
   const options = [
     {
-        value: "Category 1"
+      value: "Category 1"
     },
     {
-        value: "Category 2"
+      value: "Category 2"
     },
     {
-        value: "Category 3"
+      value: "Category 3"
     }
-];
+  ];
   console.log(options, "options")
-    
-    const [selected, setSelected] = useState("All");
 
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
-    
+  const [selected, setSelected] = useState("All");
+
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -279,7 +279,7 @@ export default function Projects({ color }) {
           <Center px={4}>
             <ButtonGroup variant="outline">
               <Button
-              id ='experienceButton'
+                id='experienceButton'
                 colorScheme={selected === "All" ? `${color}` : "gray"}
                 onClick={() => handleSelected("All")}
               >
@@ -287,7 +287,7 @@ export default function Projects({ color }) {
               </Button>
               {options.map((option) => (
                 <Button
-                id ='experienceButton'
+                  id='experienceButton'
 
                   colorScheme={selected === option.value ? `${color}` : "gray"}
                   onClick={() => handleSelected(option.value)}
