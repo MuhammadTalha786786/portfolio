@@ -136,76 +136,74 @@ export default function Projects({ color }) {
   ];
   const others = [
     {
-      "name": "Project 1",
-      "description": "under construction",
+      "name": "Smart Brain",
+      "description": "Smart Brain is detect faces in the images developed using React JS, clarifai AI",
       "tags": [
-        "Category 1"
+        "Smart Brain"
       ],
       "badges": [
         {
-          "text": "Badge",
-          "colorScheme": "blue"
+          "text": "",
+          "colorScheme": ""
         }
       ],
       "buttons": [
         {
-          "text": "Link",
-          "href": "https://example.com"
+          "text": "Smart Brain",
+          "href": "https://muhammadtalha786786.github.io/Smart_Brain/"
         }
       ]
     },
     {
-      "name": "Project 2",
-      "description": "under construction",
+      "name": "Quote Machine",
+      "description": "Quote Machine generate random quote developed in React JS ",
       "tags": [
-        "Category 2"
+        "Quote Machine"
       ],
       "badges": [
         {
-          "text": "Badge",
-          "colorScheme": "blue"
+          "text": "",
+          "colorScheme": ""
         }
       ],
       "buttons": [
         {
-          "text": "Link",
-          "href": "https://example.com"
+          "text": "Quote Machine",
+          "href": "https://muhammadtalha786786.github.io/quote-machine/"
         }
       ]
     },
     {
-      "name": "Project 3",
-      "description": "under construction",
+      "name": "RoboFriends",
+      "description": "RoboFriends is a Static React Application showing data of Robots , Search specific robot. ",
       "tags": [
-        "Category 3"
+        "RoboFriends"
       ],
       "badges": [
         {
-          "text": "Badge",
-          "colorScheme": "blue"
+          "text": "",
+          "colorScheme": ""
         }
       ],
       "buttons": [
         {
-          "text": "Link",
-          "href": "https://example.com"
+          "text": "RoboFriends",
+          "href": "https://muhammadtalha786786.github.io/Robots/"
         }
       ]
     }
   ];
   const options = [
     {
-      value: "Category 1"
+      value: "Smart Brain"
     },
     {
-      value: "Category 2"
+      value: "Quote Machine"
     },
     {
-      value: "Category 3"
+      value: "RoboFriends"
     }
   ];
-  console.log(options, "options")
-
   const [selected, setSelected] = useState("All");
 
   const handleSelected = (value) => {
