@@ -18,122 +18,13 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
-import funoonee from './images/Funoonee.jpg'
-import worklics from './images/worklics.jpg'
-import onboard from './images/onboarding.jpg'
-import delivery from './images/delivery.jpg'
+import {projects} from '.././utils/Utils'
+
 import './ResponsiveStyle.css'
 
 // 
 export default function Projects({ color }) {
-  const projects = [
-    {
-      "name": "Consumer App",
-      "description": "24Seven is an online grocery shopping platform with more than 1000 registered store partners in the market.Consumer App ( Apni Dukan ) is like ecommerce app in which users can shop online, browse product catalogs,create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
-      "image": "https://res.cloudinary.com/crunchbase-production/image/upload/hqboeqwziq5brmtbkz6c",
-      "tags": [
-        "Category 1"
-      ],
-      "badges": [
-        {
-          "text": "Badge",
-          "colorScheme": "blue"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Link",
-          "href": "https://example.com"
-        }
-      ]
-    },
-    {
-      "name": "OnBoarding App",
-      "description": "OnBoarding is basically used to onboard the shop retailers who are registered with 24Seven. Associates add the required data of shops and shop owners which can approve or reject by the Cluster Manager.",
-      "image": onboard,
-      "tags": [
-        "Category 2"
-      ],
-      "badges": [
-        {
-          "text": "Badge",
-          "colorScheme": "blue"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Link",
-          "href": "https://example.com"
-        }
-      ]
-    },
-    {
-      "name": "Delivery App",
-      "description": "The delivery app is used for delivering orders of the shop retailers from the  warehouse. The rider automatically moves to the optimized route of the",
-      "image": delivery,
-      "tags": [
-        "Category 3"
-      ],
-      "badges": [
-        {
-          "text": "Badge",
-          "colorScheme": "blue"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Link",
-          "href": "https://example.com"
-        }
-      ]
-    },
-    {
-      "name": "Funoonee",
-      "description": "Funoonee is an online market for hiring handymen based in Riyadh. My core responsibilities were the development of both mobile and web application using react-native and react js for both platforms respectively. Maintain and Deployed on the App Store.",
-      "image": funoonee,
-      "tags": [
-        "Category 3"
-      ],
-      "badges": [
-        {
-          "text": "Badge",
-          "colorScheme": "blue"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Link",
-          "href": "https://example.com"
-        }
-      ]
-    },
-    {
-      "name": "Worklics",
-      "description": `An attendance app built using the React-native framework and nodeJS and PostgreSQL being the backend and database respectively. The app consists of separate individual modules with facial recognition being the core of all.
-      The app is currently being used by the DCC Construction Company Internally.
-      Microsoft Azure cognitive services for face detection. Google-maps Api for
-      location. Redux persists for global state management. implement push
-      Notiﬁcation using Firebase. Deploy app on App Store and Play store.`,
-      "image": worklics,
-      "tags": [
-        "Category 3"
-      ],
-      "badges": [
-        {
-          "text": "Badge",
-          "colorScheme": "blue"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Link",
-          "href": "https://example.com"
-        }
-      ]
-    }
 
-
-  ];
   const others = [
     {
       "name": "Smart Brain",

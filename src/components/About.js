@@ -38,9 +38,9 @@ export default function About({ color }) {
           <HStack   id="skills" >
             { 
               skills.map((x) => (
-                <div style={{ paddingHorizontal: 10 , }}>
+                <div style={{  marginLeft:20 }}>
 
-                  <x.name size="70" />
+                  <x.name size="50"  style={{padding:8}} />
 
                 </div>
               ))

@@ -22,66 +22,13 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
-import logo from './images/logo.png'
-import codeninja from './images/codeninja.jpeg'
 import './ResponsiveStyle.css'
+import {options,experience} from '.././utils/Utils'
 
 
 
 export default function Experience({ color }) {
-  const experience = [
-  
-    {
-        "image": codeninja,
-        "company": "CodeNinja Consulting",
-        "position": "Software Engineer",
-        "duration": "Feb'22- Continue",
-        "badges": [
-            {
-                "name": "",
-                "colorScheme": "blue"
-            }
-        ],
-        "listItems": [
-            "Developed and maintained React Native components, screens, and features for the mobile app",
-            "Collaborated with other developers to implement new features in a way that is consistent with existing code-base conventions",
-            "Developed front-end user interface using React Native and JavaScript forx iOS and Android mobile applications.",
-            "Integrate Rest API's With the Application",
-            "Maintain code for Both Android and IOS",
-            "Deployed Apps on Both PlayStore and AppStore"
-        ],
-        "tags": "CodeNinja Consulting"
-    },
-    {
-      "image": logo,
-      "company": "Bitmesh Technologies",
-      "position": "Software Engineer",
-      "duration": "Sep'21 - Jan'22",
-      "badges": [
-          {
-              "name": "",
-              "colorScheme": "blue"
-          }
-      ],
-      "listItems": [
-          "As a React developer, worked on both mobile and web, designing and integrating apis, collaborating with the team and gather requirements",
-        
-      ],
-      "tags": "Bitmesh Technologies"
-  },
- 
-];
-  const options = [
-    
-    {
-        value: "CodeNinja Consulting"
-    },
 
-    {
-      value: "Bitmesh Technologies"
-  },
-    
-];
 const [selected, setSelected] = useState("");
 
 
@@ -136,13 +83,13 @@ const [selected, setSelected] = useState("");
                     <CardHeader>
                       <Flex justifyContent="space-between">
                         <HStack>
-                          <Image src={exp.image} h={50} />
+                          <Image src={exp.image} h={50}   id='experienceImage' />
                           <Box px={2} align="left">
-                            <Text fontWeight={600}>{exp.company}</Text>
-                            <Text>{exp.position}</Text>
+                            <Text fontWeight={600}   id='experienceText'>{exp.company}</Text>
+                            <Text  id='experienceText'>{exp.position}</Text>
                           </Box>
                         </HStack>
-                        <Text px={2} fontWeight={300}>
+                        <Text px={2} fontWeight={300}  id='smallText'>
                           {exp.duration}
                         </Text>
                       </Flex>
@@ -151,7 +98,7 @@ const [selected, setSelected] = useState("");
                       <Flex>
                         <List align="left" spacing={2}>
                           {exp.listItems.map((item, index) => (
-                            <ListItem key={index}>
+                            <ListItem key={index}  id='smallText'>
                               <ListIcon
                                 boxSize={6}
                                 as={ChevronRightIcon}

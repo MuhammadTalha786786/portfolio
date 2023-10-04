@@ -67,12 +67,14 @@ export default function Header({ color }) {
             id='heroHeader'
           >
             <Heading
+            id='headerText'
               fontWeight={600}
-              fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+              fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}
               lineHeight={"110%"}
+              style={{fontFamily:'Poppins, sans-serif'}}
             >
               {profile.headerName} <br />
-              <Text as={"span"} color={`${color}.400`}>
+              <Text as={"span"} color={`${color}.400`} style={{fontFamily:'Poppins, sans-serif'}}   >
                 {profile.headerRole}
               </Text>
             </Heading>
