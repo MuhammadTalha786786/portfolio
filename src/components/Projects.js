@@ -19,7 +19,6 @@ import {
 import { Fade } from "react-reveal";
 import { useState } from "react";
 import {projects} from '.././utils/Utils'
-
 import './ResponsiveStyle.css'
 
 // 
@@ -133,9 +132,9 @@ export default function Projects({ color }) {
 
                   <Stack>
                     <CardBody align="left">
-                      <Heading size="md">{project.name}</Heading>
+                      <Heading size="md" id='smallText' className='fontFamily'>{project.name}</Heading>
 
-                      <Text py={2}>{project.description}</Text>
+                      <Text py={2}  id='smallText'  className='fontFamily'>{project.description}</Text>
 
                       {/* <HStack py={2}>
                         {project.buttons.map((button) => (
@@ -162,7 +161,7 @@ export default function Projects({ color }) {
               </Fade>
             ))}
           </Stack>
-          <Text color={"gray.600"} fontSize={"xl"} px={4}>
+          <Text color={"gray.600"} fontSize={"xl"} px={4} id='headerText'  >
             Other Projects
           </Text>
           <Center px={4}>
@@ -200,9 +199,9 @@ export default function Projects({ color }) {
                   <Card key={other.name}>
                     <Stack>
                       <CardBody align="left" h={[null, "40vh"]}>
-                        <Heading size="sm">{other.name}</Heading>
+                        <Heading size="sm" id='smallText'  >{other.name}</Heading>
 
-                        <Text fontSize="sm" py={2}>
+                        <Text fontSize="sm" py={2} id='smallText'>
                           {other.description}
                         </Text>
 
@@ -212,6 +211,7 @@ export default function Projects({ color }) {
                               key={button.text}
                               href={button.href}
                               color={`${color}.400`}
+                              id='smallText'
                             >
                               {button.text}
                             </Link>

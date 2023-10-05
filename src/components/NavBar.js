@@ -16,7 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import './ResponsiveStyle.css'
 const TbIcons = require("react-icons/tb");
+
 
 export default function Nav({ color }) {
   const colors = {
@@ -92,16 +94,16 @@ export default function Nav({ color }) {
           <Stack direction={"row"} spacing={7}>
             {isLargerThanMD ? (
               <>
-                <Button variant="ghost" onClick={scrollToAbout}>
+                <Button variant="ghost" onClick={scrollToAbout} className='fontFamily' >
                   Skill
                 </Button>
-                <Button variant="ghost" onClick={scrollToExperience}>
+                <Button variant="ghost" onClick={scrollToExperience} className='fontFamily' >
                   Experience
                 </Button>
-                <Button variant="ghost" onClick={scrollToProjects}>
+                <Button variant="ghost" onClick={scrollToProjects} className='fontFamily' >
                   Projects
                 </Button>
-                <Button variant="ghost" onClick={scrollToContact}>
+                <Button variant="ghost" onClick={scrollToContact} className='fontFamily' >
                   Contact
                 </Button>
               </>
@@ -124,17 +126,17 @@ export default function Nav({ color }) {
                 <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
                   <DrawerOverlay />
                   <DrawerContent>
-                    <DrawerBody>
-                      <Button variant="ghost" onClick={scrollToAbout}>
-                        About
+                    <DrawerBody >
+                      <Button variant="ghost" onClick={scrollToAbout}  id='smallText'  className='fontFamily'>
+                        Skill
                       </Button>
-                      <Button variant="ghost" onClick={scrollToExperience}>
+                      <Button variant="ghost" onClick={scrollToExperience}  id='smallText' className='fontFamily'>
                         Experience
                       </Button>
-                      <Button variant="ghost" onClick={scrollToProjects}>
+                      <Button variant="ghost" onClick={scrollToProjects}  id='smallText' className='fontFamily'>
                         Projects
                       </Button>
-                      <Button variant="ghost" onClick={scrollToContact}>
+                      <Button variant="ghost" onClick={scrollToContact}  id='smallText' className='fontFamily'>
                         Contact
                       </Button>
                     </DrawerBody>

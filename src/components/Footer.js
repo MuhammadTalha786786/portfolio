@@ -5,6 +5,8 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import './ResponsiveStyle.css'
+
 
 export default function Footer() {
   return (
@@ -17,8 +19,9 @@ export default function Footer() {
         maxW={"6xl"}
         py={4}
         align="center"
+        id='smallText'
       >
-        <Text>© 2023 MT. All rights reserved</Text>
+        <Text className='fontFamily'   id='smallText'>© 2023 MT. All rights reserved</Text>
       </Container>
     </Box>
   );

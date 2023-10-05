@@ -72,17 +72,21 @@ export default function Header({ color }) {
               fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}
               lineHeight={"110%"}
               style={{fontFamily:'Poppins, sans-serif'}}
+              className='fontFamily' 
             >
               {profile.headerName} <br />
-              <Text as={"span"} color={`${color}.400`} style={{fontFamily:'Poppins, sans-serif'}}   >
+              <Text as={"span"} color={`${color}.400`} style={{fontFamily:'Poppins, sans-serif'}}   className='fontFamily'            id='headerText'
+  >
                 {profile.headerRole}
               </Text>
             </Heading>
 
 
             <Text
+               id='smallText'
               color={"gray.500"}
               fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
+              className='fontFamily' 
             >
               {profile.headerDesc}
             </Text>
@@ -102,6 +106,8 @@ export default function Header({ color }) {
                   bg: `${color}.500`,
                 }}
                 onClick={linkedin}
+                id='smallText'
+                className='fontFamily' 
               >
                 Let's connect!
               </Button>
@@ -110,6 +116,11 @@ export default function Header({ color }) {
                 colorScheme={"blue"}
                 size={"sm"}
                 onClick={scrollToContact}
+                id='smallText'
+                className='fontFamily' 
+
+
+
               >
                 Contact Me
               </Button>

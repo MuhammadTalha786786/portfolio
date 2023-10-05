@@ -54,10 +54,10 @@ const [selected, setSelected] = useState("");
         >
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text className='fontFamily'  color={`${color}.400`} fontWeight={800}>
                 02
               </Text>
-              <Text fontWeight={800}>Experience</Text>
+              <Text  className='fontFamily' fontWeight={800}>Experience</Text>
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
@@ -65,6 +65,7 @@ const [selected, setSelected] = useState("");
             <ButtonGroup variant="outline"  >
               {options.map((option) => (
                 <Button
+                className='fontFamily'
                 id='experienceButton'
                   colorScheme={selected === option.value ? `${color}` : "gray"}
                   onClick={() => handleSelected(option.value)}
@@ -85,11 +86,11 @@ const [selected, setSelected] = useState("");
                         <HStack>
                           <Image src={exp.image} h={50}   id='experienceImage' />
                           <Box px={2} align="left">
-                            <Text fontWeight={600}   id='experienceText'>{exp.company}</Text>
-                            <Text  id='experienceText'>{exp.position}</Text>
+                            <Text fontWeight={600} className='fontFamily'   id='smallText'>{exp.company}</Text>
+                            <Text className='fontFamily' id='smallText'>{exp.position}</Text>
                           </Box>
                         </HStack>
-                        <Text px={2} fontWeight={300}  id='smallText'>
+                        <Text className='fontFamily' px={2} fontWeight={300}  id='xSmall'>
                           {exp.duration}
                         </Text>
                       </Flex>
@@ -98,7 +99,7 @@ const [selected, setSelected] = useState("");
                       <Flex>
                         <List align="left" spacing={2}>
                           {exp.listItems.map((item, index) => (
-                            <ListItem key={index}  id='smallText'>
+                            <ListItem key={index} className='fontFamily' id='smallText'>
                               <ListIcon
                                 boxSize={6}
                                 as={ChevronRightIcon}

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+.fontFamily{
+    font-family:'Poppins', sans-serif; 
+}
+
 @media only screen and (max-width: 800px) {
     #skills {
         max-width: "60%";
@@ -23,7 +29,10 @@
         /* margin-bottom: 20; */
 
     }
-
+    #xSmall{
+        font-size: x-small;
+        font-family:'Poppins', sans-serif; 
+    }
     #heroHeader {
         margin-top: 200px;
         /* justify-content: center; */
@@ -52,6 +61,11 @@
         width:40px
     }
 
+    #xSmall{
+        font-size: x-small;
+        font-family:'Poppins', sans-serif; 
+    }
+
    #smallText{
     font-size: small;
     font-family:'Poppins', sans-serif;
@@ -61,12 +75,15 @@
     font-family:'Poppins', sans-serif;
 
    }
+
+  
     #skills {
         max-width: "60%";
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 15px;
+
+        /* margin-right: 10px; */
 
 
         padding-bottom: 10px;
@@ -81,11 +98,14 @@
         /* align-items: center;
         justify-content: center;  */
         height: 300px;
-        /* width: 300px; */
-        /* margin-left: 10px; */
+        width: 300px;
+        /* border-radius: "100%"; */
+
+
+        margin-left: 40px;
         margin-top: 80px;
-        width: 100%;
-        background-color: teal;
+        /* width: 100%; */
+        /* background-color: teal; */
         overflow: hidden;
         border-radius: 20px;
 
@@ -102,8 +122,10 @@
 
     #experienceButton {
         overflow: hidden;
-        width: '80%';
-        font-size: small;        /* padding-left:10px; */
+        /* width: '80%'; */
+        font-size: 9px;   
+        font-family:'Poppins', sans-serif;
+        /* padding-left:10px; */
 
         /* font-size: 5px; */
     }
@@ -116,7 +138,7 @@
     #profileImage {
 
         /* overflow: hidden; */
-        background-color: teal;
+        /* background-color: teal; */
         margin-top: 100px;
         margin-left: 10px;
         /* margin-bottom: 20; */
