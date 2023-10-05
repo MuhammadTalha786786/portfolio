@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
-import {projects} from '.././utils/Utils'
+import { projects } from '.././utils/Utils'
 import './ResponsiveStyle.css'
 
 // 
@@ -134,7 +134,7 @@ export default function Projects({ color }) {
                     <CardBody align="left">
                       <Heading size="md" id='smallText' className='fontFamily'>{project.name}</Heading>
 
-                      <Text py={2}  id='smallText'  className='fontFamily'>{project.description}</Text>
+                      <Text py={2} id='smallText' className='fontFamily'>{project.description}</Text>
 
                       {/* <HStack py={2}>
                         {project.buttons.map((button) => (
@@ -161,7 +161,8 @@ export default function Projects({ color }) {
               </Fade>
             ))}
           </Stack>
-          <Text color={"gray.600"} fontSize={"xl"} px={4} id='headerText'  >
+          <Text color={"gray.600"} fontSize={"xl"} px={4} id='headerText' className='fontFamily'
+          >
             Other Projects
           </Text>
           <Center px={4}>
@@ -176,6 +177,8 @@ export default function Projects({ color }) {
               {options.map((option) => (
                 <Button
                   id='experienceButton'
+                  className='fontFamily'
+
 
                   colorScheme={selected === option.value ? `${color}` : "gray"}
                   onClick={() => handleSelected(option.value)}
@@ -199,9 +202,11 @@ export default function Projects({ color }) {
                   <Card key={other.name}>
                     <Stack>
                       <CardBody align="left" h={[null, "40vh"]}>
-                        <Heading size="sm" id='smallText'  >{other.name}</Heading>
+                        <Heading size="sm" id='smallText' className='fontFamily'
+                        >{other.name}</Heading>
 
-                        <Text fontSize="sm" py={2} id='smallText'>
+                        <Text fontSize="sm" py={2} id='smallText' className='fontFamily'
+                        >
                           {other.description}
                         </Text>
 
@@ -212,6 +217,8 @@ export default function Projects({ color }) {
                               href={button.href}
                               color={`${color}.400`}
                               id='smallText'
+                              className='fontFamily'
+
                             >
                               {button.text}
                             </Link>
