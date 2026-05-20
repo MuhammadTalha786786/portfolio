@@ -1,26 +1,30 @@
-## Project A
-Description
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 1
+## StepPrep
+Education app developed at Arvo for exam preparation and learning.
+- ![logo512](../assets/logo512.png)
+- Tags: Ed-Tech
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
+  - Education [green]
 
-## Project B
-Description
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 2
+## AEP
+Education platform app built at Arvo for academic excellence.
+- ![logo512](../assets/logo512.png)
+- Tags: Ed-Tech
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
+  - Education [green]
 
-## Project C
-Description
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 3
+## Graana
+Real estate platform mobile application developed at CodeNinja Consulting.
+- ![logo512](../assets/logo512.png)
+- Tags: Services
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
+  - Real Estate [green]
+
+## loot8
+Mobile application developed at CodeNinja Consulting.
+- ![logo512](../assets/logo512.png)
+- Tags: E-Commerce
+- Badges:
+  - React Native [blue]

@@ -1,23 +1,33 @@
-## Project 1
-Description
-- Tags: Category 1
+## 24Seven Apni Dukan
+E-Commerce mobile application for online shopping and delivery services.
+- Tags: E-Commerce
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
+  - E-Commerce [green]
 
-## Project 2
-Description
-- Tags: Category 2
+## Apni Dukan onBoarding
+Onboarding application for the Apni Dukan platform.
+- Tags: E-Commerce
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
 
-## Project 3
-Description
-- Tags: Category 3
+## worklics
+Services-based mobile application.
+- Tags: Services
 - Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
+  - React Native [blue]
+  - Services [green]
+
+## funoonee
+Social networking and creative platform mobile application.
+- Tags: Social Networking
+- Badges:
+  - React Native [blue]
+  - Social [green]
+
+## Student App
+Education-focused mobile application developed at Arvo.
+- Tags: Ed-Tech
+- Badges:
+  - React Native [blue]
+  - Education [green]
