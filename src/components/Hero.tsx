@@ -1,4 +1,4 @@
-import { Box, Heading, Container, Text, HStack, VStack, Grid, GridItem, Flex, Icon, Image } from "@chakra-ui/react";
+import { Box, Heading, Container, Text, HStack, VStack, Grid, GridItem, Icon, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaReact, FaApple, FaGooglePlay } from "react-icons/fa";
