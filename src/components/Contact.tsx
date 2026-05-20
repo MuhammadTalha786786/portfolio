@@ -7,7 +7,7 @@ import { profile } from "../constants/profile";
 const M = motion(Box);
 
 const links = [
-  { icon: FaEnvelope, label: "EMAIL", value: profile.email, href: `mailto:${profile.email}` },
+  { icon: FaEnvelope, label: "EMAIS", value: profile.email, href: `mailto:${profile.email}` },
   { icon: FaLinkedin, label: "LINKEDIN", value: "muhammad-talha", href: profile.linkedin },
   { icon: FaGithub, label: "GITHUB", value: "MuhammadTalha786786", href: profile.github },
   { icon: FaPhone, label: "PHONE", value: profile.phone, href: `tel:${profile.phone}` },
