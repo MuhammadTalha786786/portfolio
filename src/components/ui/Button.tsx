@@ -47,7 +47,12 @@ export default function Button({ variant = "primary", href, external, children, 
     },
   };
 
-  const shared: BoxProps = {
+  // `href`/`target`/`rel` are only valid on BoxProps when `as` is statically
+  // known to be "a". Since `as` here is a runtime ternary (href ? "a" : "button"),
+  // TypeScript can't narrow it, so BoxProps rejects `href` as an unknown property.
+  // Typing `shared` as `any` sidesteps that limitation without affecting runtime
+  // behavior — Chakra still resolves `as`, `href`, etc. correctly at render time.
+  const shared: any = {
     as: href ? "a" : "button",
     href,
     target: external ? "_blank" : undefined,
