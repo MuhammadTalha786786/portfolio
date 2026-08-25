@@ -11,6 +11,16 @@ import IconBox from "./ui/IconBox";
 
 const M = motion(Box);
 
+// Card doesn't expose a polymorphic `as="a"` prop union in its TS types,
+// so we type the anchor-specific props here and spread them with a cast.
+// This keeps full type safety everywhere else in the file.
+type CardLinkProps = {
+  as: "a";
+  href: string;
+  target?: string;
+  rel?: string;
+};
+
 const links = [
   { icon: FaEnvelope, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { icon: FaLinkedin, label: "LinkedIn", value: "muhammad-talha", href: profile.linkedin },
@@ -60,43 +70,49 @@ export default function Contact() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={4}>
-            {links.map((link, i) => (
-              <M
-                key={link.label}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.06 }}
-              >
-                <Card
-                  as="a"
-                  href={link.href}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noreferrer noopener"
-                  borderRadius="xl"
-                  p="28px"
-                  textDecoration="none"
-                  display="block"
+            {links.map((link, i) => {
+              const cardLinkProps: CardLinkProps = {
+                as: "a",
+                href: link.href,
+                target: link.href.startsWith("http") ? "_blank" : undefined,
+                rel: "noreferrer noopener",
+              };
+
+              return (
+                <M
+                  key={link.label}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
                 >
-                  <VStack align="start" spacing={3.5}>
-                    <IconBox icon={link.icon} size="42px" />
-                    <Text
-                      fontSize="11px"
-                      fontWeight={600}
-                      color={c.dim}
-                      letterSpacing="0.1em"
-                      textTransform="uppercase"
-                      fontFamily="mono"
-                    >
-                      {link.label}
-                    </Text>
-                    <Text fontSize="14px" color={c.text} fontWeight={500} wordBreak="break-all" lineHeight="1.5">
-                      {link.value}
-                    </Text>
-                  </VStack>
-                </Card>
-              </M>
-            ))}
+                  <Card
+                    {...(cardLinkProps as any)}
+                    borderRadius="xl"
+                    p="28px"
+                    textDecoration="none"
+                    display="block"
+                  >
+                    <VStack align="start" spacing={3.5}>
+                      <IconBox icon={link.icon} size="42px" />
+                      <Text
+                        fontSize="11px"
+                        fontWeight={600}
+                        color={c.dim}
+                        letterSpacing="0.1em"
+                        textTransform="uppercase"
+                        fontFamily="mono"
+                      >
+                        {link.label}
+                      </Text>
+                      <Text fontSize="14px" color={c.text} fontWeight={500} wordBreak="break-all" lineHeight="1.5">
+                        {link.value}
+                      </Text>
+                    </VStack>
+                  </Card>
+                </M>
+              );
+            })}
           </SimpleGrid>
         </M>
       </Stack>
