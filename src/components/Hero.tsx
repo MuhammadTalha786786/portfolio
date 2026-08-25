@@ -5,7 +5,7 @@ import { FaReact, FaApple, FaGooglePlay, FaChevronDown } from "react-icons/fa";
 import { SiTypescript, SiFirebase } from "react-icons/si";
 import { useColors } from "../hooks/useColors";
 import Button from "./ui/Button";
-import profileImg from "./images/profile.jpeg";
+import profileImg from "./images/profile1.webp";
 
 const M = { Box: motion(Box), Heading: motion(Heading), Text: motion(Text) };
 
